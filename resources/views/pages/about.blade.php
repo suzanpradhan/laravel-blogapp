@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-
-    <h1>This is Anout Page.</h1>
+    <div class="jumbotron">
+        <h1 class="display-4">About Page</h1>
+        <p class="lead">Created By Sujan Pradhan.</p>
+        <hr>
+    </div>
 @endsection

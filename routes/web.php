@@ -22,7 +22,6 @@ use App\Http\Controllers\PostsController;
 //static routes
 Route::get("/about", [PagesController::class, "about"]);
 Route::get("/", [PagesController::class, "index"]);
-Route::get("/services", [PagesController::class, "services"]);
 
 // dynamic routes
 // Route::get("/users/{id}", function($id){
@@ -30,4 +29,8 @@ Route::get("/services", [PagesController::class, "services"]);
 // });
 
 //resources
-Route::resource("posts", PostsController::class)->name("*", "siswa");
+Route::resource("posts", PostsController::class);
+
+Auth::routes();
+
+Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('home');

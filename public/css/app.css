@@ -9974,3 +9974,13 @@ h3 {
 body {
   background: white !important;
 }
+
+.post__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.post__action {
+  display: flex;
+}
